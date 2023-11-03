@@ -1,3 +1,4 @@
+//Programa Java que lea dos números enteros por teclado y los muestre por pantalla
 import java.util.Scanner;
 
 public class ejercicio1 {
@@ -5,6 +6,6 @@ public class ejercicio1 {
         Scanner sp = new Scanner(System.in);
         int valor1 = sp.nextInt();
         int valor2 = sp.nextInt();
-        System.out.println("2 valores ingresados: "+valor1 + " " + valor2);
+        System.out.println("2 valores ingresados: "+valor1 + "y" + valor2);
     }
 }
