@@ -4,6 +4,7 @@ import java.util.Scanner;
 public class ejercicio4 {
     public static void main(String[] args) {
         Scanner sp = new Scanner(System.in);
+        System.out.println("Ingrese los grados centigrados: ");
         float gradosCentigrados = sp.nextFloat();
         float gradosFahrenheit = 32+(9*gradosCentigrados/5);
         System.out.println("Conversión a grados Fahrenheit: "+ gradosFahrenheit);

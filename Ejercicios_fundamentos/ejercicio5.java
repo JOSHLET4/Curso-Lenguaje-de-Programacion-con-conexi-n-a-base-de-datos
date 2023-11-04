@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class ejercicio5 {
     public static void main(String[] args) {
         Scanner sp = new Scanner(System.in);
+        System.out.println("Ingrese el radio");
         float radio = sp.nextFloat();
         float longitud = (float) (2*Math.PI*radio);
         float area = (float) (Math.PI*radio*radio);

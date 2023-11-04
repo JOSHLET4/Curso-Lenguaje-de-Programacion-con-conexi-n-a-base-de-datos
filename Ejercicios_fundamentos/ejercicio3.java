@@ -4,6 +4,7 @@ import java.util.Scanner;
 public class ejercicio3 {
     public static void main(String[] args) {
         Scanner sp = new Scanner(System.in);
+        System.out.println("Ingrese un número: ");
         int valor = sp.nextInt();
         int valorDoble = valor*2;
         int valorTriple = valor*3;
