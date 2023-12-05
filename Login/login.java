@@ -119,7 +119,11 @@ public class login extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void bentrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bentrarActionPerformed
-        if (juser.getText().equals("")){
+        if (timer == 3) {
+            JOptionPane.showMessageDialog(null, "Ha excedido el número de intentos");
+            System.exit(0);
+        }
+        else if (juser.getText().equals("")){
             JOptionPane.showMessageDialog(null, "Por favor ingrese un usuario");
         }
         else if (jpassword.getText().equals("")){
@@ -134,10 +138,6 @@ public class login extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(null, "Acceso autorizado");
             panelazul abrir = new panelazul();
             abrir.setVisible(true);
-        }
-        else if (timer == 3) {
-            JOptionPane.showMessageDialog(null, "Ha excedido el nú mero de intentos");
-            System.exit(0);
         }
         else {
             JOptionPane.showMessageDialog(null, "Credenciales incorrectas", "Message",JOptionPane.ERROR_MESSAGE);
