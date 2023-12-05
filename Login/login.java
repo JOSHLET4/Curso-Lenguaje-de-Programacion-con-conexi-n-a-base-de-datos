@@ -137,6 +137,7 @@ public class login extends javax.swing.JFrame {
         }
         else if (timer == 3) {
             JOptionPane.showMessageDialog(null, "Ha excedido el nú mero de intentos");
+            System.exit(0);
         }
         else {
             JOptionPane.showMessageDialog(null, "Credenciales incorrectas", "Message",JOptionPane.ERROR_MESSAGE);
