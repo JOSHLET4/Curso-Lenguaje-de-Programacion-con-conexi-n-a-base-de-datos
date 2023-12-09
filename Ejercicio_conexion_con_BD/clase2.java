@@ -27,7 +27,7 @@ public class clase2 {
             System.out.println("| 5. Salir |");
             //Scanner sp = new Scanner(System.in);
             String ingresar = JOptionPane.showInputDialog("Ingrese una opción");
-                int opcion = Integer.parseInt(ingresar);
+            int opcion = Integer.parseInt(ingresar);
             
             //switch (sp.nextInt()) {
             switch (opcion) {
@@ -54,7 +54,7 @@ public class clase2 {
                     System.out.println("Registro agregado con éxito\n");
                     break;
                 case 3:
-                    id = Integer.parseInt(JOptionPane.showInputDialog("Ingrese la nota promedio"));
+                    id = Integer.parseInt(JOptionPane.showInputDialog("Ingresa el ID del estudiante"));
                     //System.out.println("Ingresa el ID del estudiante");
                     //id = sp.nextInt();
                     //sp.nextLine();
@@ -75,7 +75,7 @@ public class clase2 {
                     System.out.println("Registro modificado con éxito\n");
                     break;
                 case 4:
-                    id = Integer.parseInt(JOptionPane.showInputDialog("Ingrese la nota promedio"));
+                    id = Integer.parseInt(JOptionPane.showInputDialog("Ingresa el usuario que desea eliminar"));
                     //System.out.println("Ingresa el usuario que desea eliminar");
                     //id = sp.nextInt();
                     elimi.eliminar(id);
